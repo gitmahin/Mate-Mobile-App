@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ImageFullScreenActivity">
+
+    <com.example.mate.ZoomableImageView
+        android:id="@+id/full_img_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back_to_adm_frag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/img_ripple_effect"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/left_back_arrow_solid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/more_btn_fs_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/img_ripple_effect"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/system_solid_three_dot"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

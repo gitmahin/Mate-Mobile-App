@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:orientation="vertical"
+    tools:context=".admin_fragment"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="96dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cover_img"
+                    app:shapeAppearanceOverlay="@style/radius_cover_pic"
+                    app:strokeColor="@color/light_border_color"
+                    app:strokeWidth="1dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/circle_pic_bg_admin"
+                    android:translationX="30dp"
+                    android:translationY="-70dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/author_image"
+                        app:background="@drawable/circle_pic_bg_admin"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/story_status"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.145" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:translationX="170dp"
+                    android:translationY="-125dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="Programmer Mahin"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                         />
+
+                    <TextView
+                        android:id="@+id/user_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="Active now"
+                        android:textColor="@color/active_now_color"
+                        android:layout_marginTop="6dp"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Nimul Islam Mahin" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/priority_2_white"
+                    android:lineHeight="23dp"
+                    android:textSize="16sp"
+                    android:text="It’s not a bug; it’s an undocumented feature." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mates_no_btn_admin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:background="@drawable/top_bottom_border_bg"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/number_of_mates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue_color"
+                    android:textSize="16sp"
+                    android:text="1.5K"/>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/priority_2_white"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:text="Mates"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/right_arrow_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <!-- text sizes are defined in @style.xml -->
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:id="@+id/admin_menu"
+                    app:itemTextColor="@color/admin_item_text_color"
+                    app:menu="@menu/admin_menu"
+                    android:background="@color/light_black"
+                    app:itemTextAppearanceActive="@style/AdminMenuItemTextActive"
+                    app:itemTextAppearanceInactive="@style/AdminMenuItemTextInactive"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:labelVisibilityMode="labeled"
+                    app:itemTextAppearanceActiveBoldEnabled="true"
+                    app:itemHorizontalTranslationEnabled="false"
+                    app:itemActiveIndicatorStyle="@drawable/menu_background_ripple_effect"
+                    />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/admin_menu_frag_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

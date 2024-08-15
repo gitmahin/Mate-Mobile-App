@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="radius_cover_pic">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="AdminMenuItemTextActive">
+        <item name="android:textSize">16sp</item> <!-- Customize the text size -->
+    </style>
+
+    <style name="AdminMenuItemTextInactive">
+        <item name="android:textSize">15sp</item> <!-- Customize the text size -->
+    </style>
+    
+</resources>

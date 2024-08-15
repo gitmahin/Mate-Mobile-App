@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/admin_details_item"
+        android:title="Details"
+        />
+
+    <item
+        android:id="@+id/admin_photos_item"
+        android:title="Photos"
+        />
+
+    <item
+        android:id="@+id/admin_videos_item"
+        android:title="Videos"
+        />
+
+    <item
+        android:id="@+id/admin_stories"
+        android:title="Stories"
+        />
+</menu>

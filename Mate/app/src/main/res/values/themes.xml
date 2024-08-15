@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Mate" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">@color/light_black</item>
+        <item name="android:navigationBarColor">@color/light_black</item>
+    </style>
+
+    <style name="Theme.SplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.FullScreenImageView" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <style name="Theme.Mate" parent="Base.Theme.Mate" />
+</resources>
